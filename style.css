@@ -1,0 +1,153 @@
+
+h1{
+    text-align:center ;
+   margin-top:80px;
+   margin-right: 1Opx;
+}
+
+.insertion{
+    text-align: center;
+    background-color: rgb(134, 135, 136);
+    box-shadow: 50px;
+    border-radius: 20px;
+   margin-right: 90px;
+   margin-left: 90px;
+  
+}
+#date{
+    text-align: center;
+    margin-top: 3%;
+    width: 300px;
+}
+button{
+    margin-top: 5px;
+    margin-left: 380px ;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+input{
+    width: 300px;
+    height: 50px;
+}
+
+
+ul li {
+    width: 70%;
+    height: 5%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 0,0);
+    margin-left: 200px;
+   
+}
+ion-icon{
+    font-size: 20px;
+    background: midnightblue;
+    color: rgb(197, 195, 190);
+    border: none;
+    border-radius: 50px;
+}
+.delete{
+    background: crimson;
+    border: none;
+}
+
+
+.checkbox{
+    width: 24px;
+    height: 24px;
+    margin-right: 40px;
+}
+.due-date{
+    margin-left: 20px;
+}
+#priority{
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+}
+#entre{
+    margin-top: 25px;
+    height: 50px;
+    width: 400px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    margin-left: 5%;
+}
+.position{
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles spécifiques pour les appareils Android et iPhone */
+@media only screen and (max-width: 480px) {
+    /* Ajoutez vos styles CSS pour les appareils Android et iPhone ici */
+    body {
+        font-size: 14px; /* Exemple : réduire la taille de la police pour les petits écrans */
+        margin-left: 50px;
+        margin-right: 50px;
+       
+    }
+    .contenaire{
+        background-color: rgb(134, 135, 136);
+        box-shadow: 50px;
+        border-radius: 20px;
+        margin: 3px;
+        margin-top: 0%;
+    }
+    button{
+        margin-top: 15px;
+        margin-left: 170px ;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+    /* Autres styles spécifiques pour les petits écrans */
+}
+/* Styles spécifiques pour les petits écrans */
+@media only screen and (max-width: 600px) {
+    /* Réduire la taille de la police pour s'adapter aux petits écrans */
+    body {
+        font-size: 14px;
+    }
+
+    /* Réorganiser la mise en page pour les petits écrans */
+    .position {
+        text-align: center;
+    }
+
+    .insertion input[type="text"],
+    .insertion input[type="date"],
+    .insertion button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Styles spécifiques pour les écrans moyens et grands */
+@media only screen and (min-width: 601px) {
+    /* Réinitialiser les styles de police et de mise en page pour les écrans moyens et grands */
+    body {
+        font-size: 16px;
+    }
+
+    .position {
+        text-align: left;
+    }
+
+    .insertion input[type="text"],
+    .insertion input[type="date"],
+    .insertion button {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    
+}
+#compteurAchevees, #compteurNonCompletes{
+    text-align: center;
+}

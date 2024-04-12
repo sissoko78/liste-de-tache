@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste de tache</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+
+<div class="position">
+    <img class='image' src="image/to do list.jpg">
+    <h1>Gestion de tache</h1>
+</div>
+<div class="contenaire">
+    
+    <div class="insertion">
+        <input type="text" id="entre" placeholder=" Ajotez une tache">
+        <br><label for="priority">Prioritaire</label>   
+        <input type="checkbox" id="priority"> <!-- Case à cocher pour la priorité -->
+                                                    
+        <br>   <input type="date" id="date" placeholder="date d'echéance">
+        <br><button onclick="ajoutetest()"><ion-icon name="add-circle-outline"></ion-icon></button>
+    </div>
+    <div>
+        <ul id="listtache"></ul>
+    </div>
+</div>
+
+        <div id="compteurAchevees">Tâches achevées : <span id="nombreAchevees">0</span></div>
+<div id="compteurNonCompletes">Tâches non complétées : <span id="nombreNonCompletes">0</span></div>
+
+
+
+
+
+
+<!--lien pour pouvoir telecharger les icones-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!--lien pour coller les codes java script au html-->
+<script src="tache.js"></script>
+</body>
+</html>
